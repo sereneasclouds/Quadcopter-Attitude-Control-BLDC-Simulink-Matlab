@@ -1,15 +1,14 @@
 # Quadcopter Attitude Control BLDC Motor Simulation: Simulink/Matlab
-**ED and Drives Lab Mini Project | Manipal Institute of Technology, Oct 2024**
-
-## Overview
-Closed-loop attitude control system for a quadcopter using BLDC motors, simulated in MATLAB Simulink + Simscape Multibody. Controls roll, pitch, and yaw via PID controllers and a motor mixing algorithm.
+Designed closed-loop PID + Fuzzy Logic controllers for roll, pitch, and yaw control 
+of a quadcopter with BLDC motors and Hall-effect sensor feedback; simulated in MATLAB, demonstrating multi-threaded 
+control logic and real-time system design. 
 
 ## Tech Stack
-- MATLAB / Simulink (R2024a)
+- Simulink/Matlab
 - Simscape Multibody
 - CAD: SolidWorks → STEP → Simscape XML import
 
-## Motor Parameters (BLDC)
+## BLDC Motor Parameters
 | Parameter | Value |
 |---|---|
 | Torque constant Kt | 0.0136 N·m/A |
@@ -21,18 +20,18 @@ Closed-loop attitude control system for a quadcopter using BLDC motors, simulate
 ## Files
 | File | Description |
 |---|---|
-| `BLDC_create_1.m` | BLDC motor model — electrical (Ls+R) and mechanical (Js+B) transfer functions |
+| `BLDC_create_1.m` | BLDC motor model: electrical and mechanical transfer functions |
 | `quadcopter_bldc_setup.m` | Builds full Simulink model: ESC logic, BLDC dynamics, mixer subsystem |
 | `mixer_create.m` | Motor mixing: distributes throttle/roll/pitch/yaw to 4 motor PWM signals |
 | `drone_DataFile.m` | Simscape Multibody rigid transform and inertia data (CAD-derived) |
-| `Quadcopter_BLDC.slx` | Simulink — BLDC motor + quadcopter dynamics |
-| `Quadcopter_BLDC_Mixer.slx` | Simulink — with motor mixing integrated |
+| `Quadcopter_BLDC.slx` | Simulink: BLDC motor + quadcopter dynamics |
+| `Quadcopter_BLDC_Mixer.slx` | Simulink: with motor mixing integrated |
 | `drone_1.slx` | Full simulation with Simscape Multibody 3D model |
 | `drone.xml` | Simscape import XML from SolidWorks CAD |
-| `*.STEP` | CAD geometry — drone frame and propeller |
+| `*.STEP` | drone 3D CAD model |
 
 ## How to Run
-1. Open MATLAB R2024a+
+1. Open MATLAB
 2. Run `quadcopter_bldc_setup.m` to initialize workspace and open the Simulink model
 3. Open `Quadcopter_BLDC_Mixer.slx` or `drone_1.slx` for the full simulation
 4. Set roll/pitch/yaw reference inputs and run simulation (5–10s)
