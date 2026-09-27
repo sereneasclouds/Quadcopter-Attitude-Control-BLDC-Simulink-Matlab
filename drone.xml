@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/02/24||15:22:36" using="Simscape Multibody Link Version 7.4" from="SolidWorks 32.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="128">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base1-1" uid="base1-1" entityUid="base1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0.22880109568799156 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.29803921568627451" g="0.29803921568627451" b="0.29803921568627451" a="1"/>
+<Diffuse r="0.29803921568627451" g="0.29803921568627451" b="0.29803921568627451" a="1"/>
+<Specular r="0.14901960784313725" g="0.14901960784313725" b="0.14901960784313725" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="fan-4" uid="fan-4" entityUid="fan*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.85055754984682896 0.36599268195735979 -0.84991040166459175</Translation>
+</Transform>
+</Instance>
+<Instance name="fan-1" uid="fan-1" entityUid="fan*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.8505575498469502 0.3659926819573599 0.84714587318312418</Translation>
+</Transform>
+</Instance>
+<Instance name="fan-2" uid="fan-2" entityUid="fan*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.84649872500076517 0.36599268195736007 0.8471458731832463</Translation>
+</Transform>
+</Instance>
+<Instance name="fan-3" uid="fan-3" entityUid="fan*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.84649872500089274 0.36599268195736001 -0.84991040166446363</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>0.85055748950198673 0.21819890431201416 0.84714586341776044</Position>
+<Axis>-2.0948888033058601e-14 1 1.38777878078146e-14</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>fan-1</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 -0.028992681957359823 -9.7653668484909417e-09</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>0.85055748950198873 0.10819890431201568 0.76714586341775948</Position>
+<Axis>-2.0948888033058601e-14 1 1.4025937647363501e-14</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>fan-1</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 -0.028992681957359823 -9.7653668484909417e-09</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>-0.84649878534572232 0.21819890431200817 0.84714586341787945</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>fan-2</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 -0.028992681957359823 -9.7653668484909417e-09</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>-0.81899878534574022 0.16819890431200868 0.84714586341786147</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>fan-2</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 0.031007318042640175 -9.7653668484909417e-09</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>-0.84649878534584622 0.21819890431203814 -0.8499104114298186</Position>
+<Axis>1.3965925355372841e-14 1 2.0816681711721452e-14</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>fan-3</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 -0.028992681957359823 -9.7653668484909417e-09</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>-0.84649878534582934 0.16819890431203766 -0.82241041142983762</Position>
+<Axis>-1.3965925355372841e-14 -1 -2.0948888033058403e-14</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>fan-3</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 0.031007318042640231 -9.7653668484909417e-09</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>0.85055748950186283 0.21819890431204414 -0.84991041142994872</Position>
+<Axis>-6.9388939039069807e-15 1 3.4914813388431453e-14</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>fan-4</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 -0.028992681957359823 -9.7653668484909417e-09</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base1-1</Uid>
+</InstancePath>
+<Position>0.77055748950186365 0.10819890431204365 -0.84991041142995261</Position>
+<Axis>-6.9229503856950308e-15 1 3.4914813388431453e-14</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>fan-4</Uid>
+</InstancePath>
+<Position>-6.0344957142355327e-08 -0.028992681957359823 -9.7653668484909417e-09</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="base1" uid="base1*:*Default" version="231">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>121.7585023821259</Mass>
+<CenterOfMass>0.0017017373826729164 0.020262183793952327 -0.001893647996780256</CenterOfMass>
+<Inertia>27.392845542657213 51.537025283559707 28.724741122267002 -0.0020718166065797437 -0.0002054527417002941 -0.0029528680321965011</Inertia>
+</MassProperties>
+<GeometryFile name="base1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="fan" uid="fan*:*Default" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="fan.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.0373598271538311</Mass>
+<CenterOfMass>8.2645176942590125e-09 -0.00011192629890799445 3.5020046941647403e-10</CenterOfMass>
+<Inertia>0.077898425035970831 0.079419144985834869 0.0019154570309703723 5.4639077277002717e-09 -0.0029518075746521942 -3.8019461977569651e-09</Inertia>
+</MassProperties>
+<GeometryFile name="fan_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
