@@ -1,6 +1,6 @@
 # Quadcopter Attitude Control BLDC Motor Simulation: Simulink/Matlab
-Designed closed-loop PID + Fuzzy Logic controllers for roll, pitch, and yaw control 
-of a quadcopter with BLDC motors and Hall-effect sensor feedback; simulated in MATLAB, demonstrating multi-threaded 
+Designed closed-loop PID + Fuzzy Logic controllers for roll, pitch and yaw control 
+of a quadcopter with BLDC motors and Hall-effect sensor feedback simulated in MATLAB, demonstrating
 control logic and real-time system design. 
 
 ## Tech Stack
